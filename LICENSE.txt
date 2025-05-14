@@ -4,7 +4,10 @@ Dieses Projekt ist rein persönlich und dient ausschließlich als digitale Portf
 Der gesamte Quellcode, alle Inhalte und Mediendateien dürfen nicht kopiert, verwendet oder verbreitet werden.  
 Jegliche kommerzielle oder nicht-kommerzielle Nutzung ist untersagt, außer mit ausdrücklicher schriftlicher Genehmigung.
 
+
+
 © 2025 Eileen Jenke. All rights reserved.
+
 This project is a personal portfolio and is intended solely for presentation purposes.
 All source code, content, and media files included in this repository are the intellectual property of Eileen Jenke and may not be copied, reused, modified, or distributed in any form without explicit written permission.
 Commercial and non-commercial use of any part of this project is strictly prohibited.
