@@ -1,0 +1,22 @@
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: #a78bfa;
+    text-decoration: underline;
+}

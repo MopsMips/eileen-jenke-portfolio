@@ -1,0 +1,69 @@
+.projects-section {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    /* vorher #1e293b */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    /* vorher #a78bfa */
+    margin-bottom: 0.5rem;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--subtle-text);
+    /* vorher #cbd5e0 */
+}
+
+.more-projects {
+    margin-top: 3rem;
+}
+
+.more-projects a {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--button-primary);
+    /* vorher #9333ea */
+    color: var(--button-text);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.more-projects a:hover {
+    background-color: var(--button-primary-hover);
+    /* vorher #a855f7 */
+}

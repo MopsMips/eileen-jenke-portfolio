@@ -1,0 +1,75 @@
+/* ========== Theme Variables ========== */
+
+body.dark {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --subtle-text: #cbd5e0;
+  --accent-color: #3b82f6;
+
+  --card-bg: #1e293b;
+  --button-primary: #6b21a8;
+  --button-primary-hover: #7c3aed;
+  --button-text: #ffffff;
+
+  --footer-bg: #0f172a;
+  --footer-text: #cbd5e0;
+  --logo-muted: rgba(255, 255, 255, 0.5);
+  --logo-accent: #ffffff;
+
+  --progress-bg: #1e293b;
+  --progress-fill: #a78bfa;
+
+}
+
+body.light {
+  --bg-color: #f8fafc;
+  --text-color: #1a202c;
+  --subtle-text: #4a5568;
+  --accent-color: #3b82f6;
+
+  --card-bg: #ffffff;
+  --button-primary: #d8b4fe;
+  --button-primary-hover: #c084fc;
+  --button-text: #1a202c;
+
+  --footer-bg: #f1f5f9;
+  --footer-text: #1a202c;
+  --logo-muted: rgba(0, 0, 0, 0.5);
+  --logo-accent: #4f46e5;
+
+  --progress-bg: #e5e7eb;
+  --progress-fill: #7c3aed;
+
+}
+
+/* ========== Layout ========== */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ========== Dark Mode Toggle Button ========== */
+
+.mode-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* ========== Cleanup: Entfernte Demo-Klassen ========== */
+/* .logo, .card, .read-the-docs usw. entfernt */
