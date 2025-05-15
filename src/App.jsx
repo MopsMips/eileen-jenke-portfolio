@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 import "./App.css";
 
 function App() {
@@ -30,8 +31,9 @@ function App() {
       <Proficiency />
       <Projects />
       <ScrollToTop />
-      <Footer />
       <Experience />
+      <Contact />
+      <Footer />
     </>
   );
 }
