@@ -4,12 +4,12 @@ import { FaPaintBrush, FaRobot, FaGlobe } from "react-icons/fa";
 
 const experiences = [
     {
-        icon: <FaPaintBrush />,
-        title: "Creative Contributor",
-        org: "University Esports Berlin",
-        location: "Berlin · since 2024",
-        description: "Designs, illustrations & content for Discord, events and social media. Custom emojis, graphics and brand visuals.",
-        tools: "Photoshop, Illustrator, Canva, Clip Studio Paint, ProCreate"
+        icon: <FaGlobe />,
+        title: "Web Portfolio",
+        org: "Personal Project",
+        location: "Remote · 2025",
+        description: "Designed and developed my portfolio site with animations, dark mode and responsive layout.",
+        tools: "React, Vite, HTML, JavaScipt, CSS, Framer Motion, GitHub Pages"
     },
     {
         icon: <FaRobot />,
@@ -20,12 +20,12 @@ const experiences = [
         tools: "TypeScript, Python, Docker, Raspberry Pi, Discord"
     },
     {
-        icon: <FaGlobe />,
-        title: "Web Portfolio",
-        org: "Personal Project",
-        location: "Remote · 2025",
-        description: "Designed and developed my portfolio site with animations, dark mode and responsive layout.",
-        tools: "React, Vite, HTML, JavaScipt, CSS, Framer Motion, GitHub Pages"
+        icon: <FaPaintBrush />,
+        title: "Creative Contributor",
+        org: "University Esports Berlin",
+        location: "Berlin · since 2024",
+        description: "Designs, illustrations & content for Discord, events and social media. Custom emojis, graphics and brand visuals.",
+        tools: "Photoshop, Illustrator, Canva, Clip Studio Paint, ProCreate"
     },
     {
         icon: <FaPaintBrush />,
