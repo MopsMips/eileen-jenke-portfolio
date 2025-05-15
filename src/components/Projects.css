@@ -18,22 +18,28 @@
 
 .project-card {
     background-color: var(--card-bg);
-    /* vorher #1e293b */
     padding: 1.5rem;
     border-radius: 1rem;
     text-align: left;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
 }
 
+.project-info {
+    flex-grow: 1;
+}
+
 .project-card h3 {
     font-size: 1.3rem;
     color: var(--accent-color);
-    /* vorher #a78bfa */
     margin-bottom: 0.5rem;
 }
 
@@ -41,10 +47,31 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1rem;
     font-size: 0.9rem;
     color: var(--subtle-text);
-    /* vorher #cbd5e0 */
+    margin-top: 1rem;
+}
+
+.project-meta.tech-line {
+    margin-top: 1rem;
+}
+
+.project-meta.stat-line {
+    margin-top: 0.3rem;
+}
+
+.project-link {
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+.project-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.project-link a:hover {
+    text-decoration: underline;
 }
 
 .more-projects {
@@ -55,7 +82,6 @@
     display: inline-block;
     padding: 0.8rem 2rem;
     background-color: var(--button-primary);
-    /* vorher #9333ea */
     color: var(--button-text);
     border-radius: 0.5rem;
     font-weight: 600;
@@ -65,5 +91,4 @@
 
 .more-projects a:hover {
     background-color: var(--button-primary-hover);
-    /* vorher #a855f7 */
 }

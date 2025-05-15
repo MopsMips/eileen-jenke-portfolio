@@ -1,10 +1,10 @@
 import "./Skills.css";
 import { motion } from "framer-motion";
 import {
-    FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaDocker, FaPenNib,
+    FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaDocker, FaPaintBrush,
 } from "react-icons/fa";
 import {
-    SiTypescript, SiFigma, SiCanva, SiAdobephotoshop, SiAseprite,
+    SiTypescript, SiFigma, SiCanva, SiAdobephotoshop, SiAseprite, SiAdobeillustrator,
 } from "react-icons/si";
 
 function Skills() {
@@ -19,7 +19,8 @@ function Skills() {
         { icon: <SiFigma />, label: "Figma" },
         { icon: <SiCanva />, label: "Canva" },
         { icon: <SiAdobephotoshop />, label: "Photoshop" },
-        { icon: <FaPenNib />, label: "Procreate" },
+        { icon: <SiAdobeillustrator />, label: "Illustrator" },
+        { icon: <FaPaintBrush />, label: "Procreate" },
         { icon: <SiAseprite />, label: "Aseprite" }
 
 
@@ -62,7 +63,7 @@ function Skills() {
             </motion.div>
 
             <ul className="skills-bullets">
-                <li>⚡ Built two Discord bots using Python and TypeScript — one runs on a Raspberry Pi with Docker.</li>
+                <li>⚡ Built two Discord bots using Python and TypeScript — runs on a Raspberry Pi with Docker.</li>
                 <li>⚡ Developed this portfolio with React, Vite, CSS, Framer Motion, and deployed via GitHub Pages.</li>
                 <li>⚡ Create illustrations, UI assets, and visuals using Procreate, Photoshop, Aseprite & more.</li>
             </ul>
