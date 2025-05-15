@@ -6,6 +6,7 @@ import Proficiency from "./components/Proficiency";
 import Projects from "./components/Projects";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
+import Experience from "./components/Experience";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Projects />
       <ScrollToTop />
       <Footer />
+      <Experience />
     </>
   );
 }

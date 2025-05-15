@@ -1,0 +1,75 @@
+.experience-section {
+    padding: 6rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.experience-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 2rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -1.85rem;
+    top: 0.3rem;
+    background-color: var(--accent-color);
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.timeline-content {
+    background: var(--card-bg);
+    padding: 1rem 1.2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.timeline-content .org {
+    display: block;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-top: 0.2rem;
+}
+
+.timeline-content .location {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--subtle-text);
+    margin-bottom: 0.7rem;
+}
+
+.timeline-content p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.timeline-content .tools {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--subtle-text);
+}
