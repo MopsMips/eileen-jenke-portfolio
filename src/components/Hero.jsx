@@ -33,7 +33,7 @@ function Hero() {
                     <div className="hero-buttons">
                         <a href="#contact" className="btn">Contact Me</a>
                         <a
-                            href="https://discord.gg/deinLink"
+                            href="https://discord.gg/6dzteBrQyg"
                             className="btn secondary btn-discord"
                             target="_blank"
                             rel="noopener noreferrer"

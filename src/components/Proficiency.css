@@ -8,7 +8,7 @@
 
 .proficiency-section h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     text-align: left;
 }
 
@@ -17,13 +17,15 @@
 }
 
 .skill p {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .progress {
     width: 100%;
-    background-color: var(--progress-bg);
+    background-color: var(--progress-bg, #e5e7eb);
+    /* fallback hellgrau */
     border-radius: 9999px;
     overflow: hidden;
     height: 14px;
@@ -31,6 +33,8 @@
 
 .bar {
     height: 100%;
-    background-color: var(--progress-fill);
+    background-color: var(--progress-fill, #a78bfa);
+    /* fallback lila */
     transition: width 0.5s ease;
+    border-radius: 9999px;
 }
