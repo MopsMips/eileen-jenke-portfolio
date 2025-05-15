@@ -6,6 +6,7 @@ import {
 import {
     SiTypescript, SiFigma, SiCanva, SiAdobephotoshop, SiAseprite, SiAdobeillustrator,
 } from "react-icons/si";
+import eileenGif from "../assets/EileenAtWork.gif"; // ← Dein Pixel-Art-GIF
 
 function Skills() {
     const skills = [
@@ -21,9 +22,7 @@ function Skills() {
         { icon: <SiAdobephotoshop />, label: "Photoshop" },
         { icon: <SiAdobeillustrator />, label: "Illustrator" },
         { icon: <FaPaintBrush />, label: "Procreate" },
-        { icon: <SiAseprite />, label: "Aseprite" }
-
-
+        { icon: <SiAseprite />, label: "Aseprite" },
     ];
 
     return (
@@ -37,36 +36,50 @@ function Skills() {
                 What I do
             </motion.h2>
 
-            <motion.p
-                className="skills-subtitle"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-            >
-                Creative developer working at the intersection of code, design and community.
-            </motion.p>
+            <div className="skills-layout">
+                <motion.img
+                    src={eileenGif}
+                    alt="Pixel art of Eileen working"
+                    className="skills-image"
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                />
 
-            <motion.div
-                className="skills-icons"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-            >
-                {skills.map((skill, index) => (
-                    <div className="icon-with-label" key={index}>
-                        {skill.icon}
-                        <span>{skill.label}</span>
-                    </div>
-                ))}
-            </motion.div>
+                <div className="skills-text">
+                    <motion.p
+                        className="skills-subtitle"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: true }}
+                    >
+                        Creative developer working at the intersection of code, design and community.
+                    </motion.p>
 
-            <ul className="skills-bullets">
-                <li>⚡ Built two Discord bots using Python and TypeScript — runs on a Raspberry Pi with Docker.</li>
-                <li>⚡ Developed this portfolio with React, Vite, CSS, Framer Motion, and deployed via GitHub Pages.</li>
-                <li>⚡ Create illustrations, UI assets, and visuals using Procreate, Photoshop, Aseprite & more.</li>
-            </ul>
+                    <motion.div
+                        className="skills-icons"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        {skills.map((skill, index) => (
+                            <div className="icon-with-label" key={index}>
+                                {skill.icon}
+                                <span>{skill.label}</span>
+                            </div>
+                        ))}
+                    </motion.div>
+
+                    <ul className="skills-bullets">
+                        <li>⚡ Built two Discord bots using Python and TypeScript — runs on a Raspberry Pi with Docker.</li>
+                        <li>⚡ Developed this portfolio with React, Vite, CSS, Framer Motion, and deployed via GitHub Pages.</li>
+                        <li>⚡ Create illustrations, UI assets, and visuals using Procreate, Photoshop, Aseprite & more.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     );
 }
