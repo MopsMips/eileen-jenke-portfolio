@@ -1,14 +1,26 @@
 .proficiency-section {
-    padding: 5rem 1rem;
+    padding: 5rem 2rem;
     background-color: var(--bg-color);
     color: var(--text-color);
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.proficiency-section h2 {
+.proficiency-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.proficiency-text {
+    flex: 1 1 500px;
+}
+
+.proficiency-text h2 {
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     text-align: left;
 }
 
@@ -25,7 +37,6 @@
 .progress {
     width: 100%;
     background-color: var(--progress-bg, #e5e7eb);
-    /* fallback hellgrau */
     border-radius: 9999px;
     overflow: hidden;
     height: 14px;
@@ -34,7 +45,35 @@
 .bar {
     height: 100%;
     background-color: var(--progress-fill, #a78bfa);
-    /* fallback lila */
     transition: width 0.5s ease;
     border-radius: 9999px;
+}
+
+/* GIF rechts neben dem Text */
+.proficiency-gif-wrapper {
+    flex-shrink: 0;
+    width: 400px;
+    max-width: 100%;
+}
+
+.proficiency-gif {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive: Stack auf Mobile */
+@media (max-width: 768px) {
+    .proficiency-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proficiency-text h2 {
+        text-align: center;
+    }
+
+    .proficiency-gif-wrapper {
+        margin-top: 2rem;
+    }
 }
