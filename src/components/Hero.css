@@ -79,15 +79,14 @@
 }
 
 .hero-image-wrapper {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    border: 5px solid var(--accent-color);
     overflow: hidden;
-    flex-shrink: 0;
+    border: 5px solid var(--accent-color);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-image-wrapper img {
@@ -159,8 +158,8 @@
 
 @media (max-width: 768px) {
     .hero-image-wrapper {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
 
     .hero-text h1 {
