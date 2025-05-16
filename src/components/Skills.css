@@ -83,10 +83,10 @@
 
 .skills-layout {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap;
 }
 
 .skills-image {
@@ -99,5 +99,22 @@
 
 .skills-text {
     flex: 1;
-    min-width: 250px;
+    min-width: 300px;
+}
+
+/*  Mobile/Tablet Layout */
+@media (max-width: 768px) {
+    .skills-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-text {
+        text-align: center;
+    }
+
+    .skills-icons {
+        justify-content: center;
+    }
 }

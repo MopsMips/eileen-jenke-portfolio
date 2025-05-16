@@ -27,19 +27,10 @@ function Skills() {
 
     return (
         <section id="skills" className="skills-section">
-            <motion.h2
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-            >
-                What I do
-            </motion.h2>
-
             <div className="skills-layout">
                 <motion.img
                     src={eileenGif}
-                    alt="Pixel art of Eileen working"
+                    alt="Eileen at desk"
                     className="skills-image"
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -48,6 +39,16 @@ function Skills() {
                 />
 
                 <div className="skills-text">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="skills-heading"
+                    >
+                        What I do
+                    </motion.h2>
+
                     <motion.p
                         className="skills-subtitle"
                         initial={{ opacity: 0, y: 20 }}
@@ -72,6 +73,7 @@ function Skills() {
                             </div>
                         ))}
                     </motion.div>
+
 
                     <ul className="skills-bullets">
                         <li>⚡ Built two Discord bots using Python and TypeScript — runs on a Raspberry Pi with Docker.</li>
