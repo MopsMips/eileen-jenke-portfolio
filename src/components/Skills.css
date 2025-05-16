@@ -102,7 +102,6 @@
     min-width: 300px;
 }
 
-/*  Mobile/Tablet Layout */
 @media (max-width: 768px) {
     .skills-layout {
         flex-direction: column;

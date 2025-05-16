@@ -59,10 +59,8 @@ function Projects() {
                         </h3>
                         <p>{proj.description}</p>
 
-                        {/* 1. Zeile: Tech */}
                         <div className="project-meta tech-line">🛠 {proj.tech}</div>
 
-                        {/* 2. Zeile: Forks / Stars / Size */}
                         <div className="project-meta stat-line">
                             <span><FaCodeBranch /> {proj.forks}</span>
                             <span><FaStar /> {proj.stars}</span>

@@ -6,7 +6,7 @@ import {
 import {
     SiTypescript, SiFigma, SiCanva, SiAdobephotoshop, SiAseprite, SiAdobeillustrator,
 } from "react-icons/si";
-import eileenGif from "../assets/EileenAtWork.gif"; // ← Dein Pixel-Art-GIF
+import eileenGif from "../assets/EileenAtWork.gif";
 
 function Skills() {
     const skills = [
@@ -73,7 +73,6 @@ function Skills() {
                             </div>
                         ))}
                     </motion.div>
-
 
                     <ul className="skills-bullets">
                         <li>⚡ Built two Discord bots using Python and TypeScript — runs on a Raspberry Pi with Docker.</li>

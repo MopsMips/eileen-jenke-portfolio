@@ -49,7 +49,6 @@
     border-radius: 9999px;
 }
 
-/* GIF rechts neben dem Text */
 .proficiency-gif-wrapper {
     flex-shrink: 0;
     width: 400px;
@@ -62,7 +61,6 @@
     display: block;
 }
 
-/* Responsive: Stack auf Mobile */
 @media (max-width: 768px) {
     .proficiency-layout {
         flex-direction: column;
