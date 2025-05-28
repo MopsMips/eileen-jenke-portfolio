@@ -139,7 +139,15 @@
   "title": "Showcase",
   "subtitle": "Bewege den Regler, um die Verwandlung zu sehen ✨",
   "more": "Mehr anzeigen"
+},
+"skills": {
+  "title": "Was ich mache",
+  "subtitle": "Kreative Entwicklerin an der Schnittstelle von Code, Design und Community.",
+  "bullets": [
+    "⚡ Zwei Discord-Bots mit Python und TypeScript gebaut — läuft auf einem Raspberry Pi mit Docker.",
+    "⚡ Dieses Portfolio mit React, Vite, CSS, Framer Motion entwickelt und über GitHub Pages veröffentlicht.",
+    "⚡ Illustrationen, UI-Elemente und Visuals mit Procreate, Photoshop, Aseprite & Co. erstellt."
+  ]
 }
-
 
 }

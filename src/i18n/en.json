@@ -135,8 +135,15 @@
   "title": "Showcase",
   "subtitle": "Move the slider to see the transformation ✨",
   "more": "Show More"
+},
+"skills": {
+  "title": "What I do",
+  "subtitle": "Creative developer working at the intersection of code, design and community.",
+  "bullets": [
+    "⚡ Built two Discord bots using Python and TypeScript — runs on a Raspberry Pi with Docker.",
+    "⚡ Developed this portfolio with React, Vite, CSS, Framer Motion, and deployed via GitHub Pages.",
+    "⚡ Create illustrations, UI assets, and visuals using Procreate, Photoshop, Aseprite & more."
+  ]
 }
-
-
 
 }

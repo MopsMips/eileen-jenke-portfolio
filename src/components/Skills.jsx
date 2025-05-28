@@ -1,14 +1,17 @@
 import "./Skills.css";
 import { motion } from "framer-motion";
 import {
-    FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaDocker, FaPaintBrush,
+    FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaDocker, FaPaintBrush
 } from "react-icons/fa";
 import {
-    SiTypescript, SiFigma, SiCanva, SiAdobephotoshop, SiAseprite, SiAdobeillustrator,
+    SiTypescript, SiFigma, SiCanva, SiAdobephotoshop, SiAseprite, SiAdobeillustrator
 } from "react-icons/si";
 import eileenGif from "../assets/EileenAtWork.gif";
+import { useTranslation } from "react-i18next";
 
 function Skills() {
+    const { t } = useTranslation();
+
     const skills = [
         { icon: <FaHtml5 />, label: "HTML5" },
         { icon: <FaCss3Alt />, label: "CSS3" },
@@ -22,7 +25,7 @@ function Skills() {
         { icon: <SiAdobephotoshop />, label: "Photoshop" },
         { icon: <SiAdobeillustrator />, label: "Illustrator" },
         { icon: <FaPaintBrush />, label: "Procreate" },
-        { icon: <SiAseprite />, label: "Aseprite" },
+        { icon: <SiAseprite />, label: "Aseprite" }
     ];
 
     return (
@@ -46,7 +49,7 @@ function Skills() {
                         viewport={{ once: true }}
                         className="skills-heading"
                     >
-                        What I do
+                        {t("skills.title")}
                     </motion.h2>
 
                     <motion.p
@@ -56,7 +59,7 @@ function Skills() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
                     >
-                        Creative developer working at the intersection of code, design and community.
+                        {t("skills.subtitle")}
                     </motion.p>
 
                     <motion.div
@@ -75,9 +78,9 @@ function Skills() {
                     </motion.div>
 
                     <ul className="skills-bullets">
-                        <li>⚡ Built two Discord bots using Python and TypeScript — runs on a Raspberry Pi with Docker.</li>
-                        <li>⚡ Developed this portfolio with React, Vite, CSS, Framer Motion, and deployed via GitHub Pages.</li>
-                        <li>⚡ Create illustrations, UI assets, and visuals using Procreate, Photoshop, Aseprite & more.</li>
+                        <li>{t("skills.bullets.0")}</li>
+                        <li>{t("skills.bullets.1")}</li>
+                        <li>{t("skills.bullets.2")}</li>
                     </ul>
                 </div>
             </div>
