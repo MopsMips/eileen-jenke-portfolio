@@ -89,3 +89,60 @@ input:checked+.slider::before {
     transform: translateX(24px);
     content: "🌙";
 }
+
+.navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.language-switch button {
+    all: unset;
+    /* entfernt alle Standardstyles */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.language-switch button:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.language-switch button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.language-switch button.active {
+    opacity: 1;
+}
+
+.language-switch button img {
+    width: 20px;
+    height: auto;
+    display: block;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    filter: grayscale(40%);
+    transition: filter 0.2s ease;
+}
+
+.language-switch button.active img {
+    filter: none;
+}
+
+.language-separator {
+    font-size: 1rem;
+    opacity: 0.4;
+    margin: 0 0.2rem;
+}

@@ -6,13 +6,13 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Proficiency from "./components/Proficiency";
 import Projects from "./components/Projects";
-import Showcase from "./components/Showcase"; // vorher: BeforeAfter
+import Showcase from "./components/Showcase";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
-import ShowcasePage from "./pages/ShowcasePage"; // eigene Seite für vollständige Galerie
+import ShowcasePage from "./pages/ShowcasePage";
 
 import "./App.css";
 
@@ -22,34 +22,39 @@ function App() {
     return stored === null ? true : stored === "true";
   });
 
+  const [language, setLanguage] = useState("en");
+
   useEffect(() => {
     document.body.className = darkMode ? "dark" : "light";
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
-  const toggleDarkMode = () => setDarkMode(prev => !prev);
-
   return (
     <Router>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Navbar
+        darkMode={darkMode}
+        toggleDarkMode={() => setDarkMode(prev => !prev)}
+        language={language}
+        setLanguage={setLanguage}
+      />
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Hero />
-              <Skills />
-              <Proficiency />
-              <Projects />
-              <Showcase />
+              <Hero language={language} />
+              <Skills language={language} />
+              <Proficiency language={language} />
+              <Projects language={language} />
+              <Showcase language={language} />
               <ScrollToTop />
-              <Experience />
-              <Contact />
-              <Footer />
+              <Experience language={language} />
+              <Contact language={language} />
+              <Footer language={language} />
             </>
           }
         />
-        <Route path="/showcase" element={<ShowcasePage />} />
+        <Route path="/showcase" element={<ShowcasePage language={language} />} />
       </Routes>
     </Router>
   );
