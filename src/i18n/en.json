@@ -130,7 +130,13 @@
       "link": "https://github.com/MopsMips/Pawsistant"
     }
   ]
+},
+"showcase": {
+  "title": "Showcase",
+  "subtitle": "Move the slider to see the transformation ✨",
+  "more": "Show More"
 }
+
 
 
 }

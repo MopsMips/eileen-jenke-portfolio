@@ -1,15 +1,18 @@
 import "./Showcase.css";
 import ReactCompareImage from "react-compare-image";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import beforeImage from "../assets/Before.png";
 import afterImage from "../assets/After.png";
 
 function Showcase() {
+    const { t } = useTranslation();
+
     return (
         <section id="showcase" className="before-after-section">
-            <h2>Showcase</h2>
-            <p>Move the slider to see the transformation ✨</p>
+            <h2>{t("showcase.title")}</h2>
+            <p>{t("showcase.subtitle")}</p>
 
             <div className="slider-container">
                 <ReactCompareImage
@@ -20,7 +23,7 @@ function Showcase() {
             </div>
 
             <div className="more-projects">
-                <Link to="/showcase">Show More</Link>
+                <Link to="/showcase">{t("showcase.more")}</Link>
             </div>
         </section>
     );
