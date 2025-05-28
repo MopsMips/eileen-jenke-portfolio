@@ -1,10 +1,11 @@
-import "./BeforeAfter.css";
+import "./Showcase.css";
 import ReactCompareImage from "react-compare-image";
+import { Link } from "react-router-dom";
 
 import beforeImage from "../assets/Before.png";
 import afterImage from "../assets/After.png";
 
-function BeforeAfter() {
+function Showcase() {
     return (
         <section id="showcase" className="before-after-section">
             <h2>Showcase</h2>
@@ -19,16 +20,10 @@ function BeforeAfter() {
             </div>
 
             <div className="more-projects">
-                <a
-                    href="https://your-external-gallery.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Show More
-                </a>
+                <Link to="/showcase">Show More</Link>
             </div>
         </section>
     );
 }
 
-export default BeforeAfter;
+export default Showcase;

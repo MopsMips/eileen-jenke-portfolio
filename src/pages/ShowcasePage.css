@@ -1,0 +1,27 @@
+.showcase-page {
+    padding: 6rem 2rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.showcase-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.showcase-page p {
+    font-size: 1.1rem;
+    color: var(--subtle-text);
+    margin-bottom: 3rem;
+}
+
+.gallery-placeholder {
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: auto;
+}
