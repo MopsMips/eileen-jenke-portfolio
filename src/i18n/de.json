@@ -14,6 +14,70 @@
     "success": "✅ Deine Nachricht wurde gesendet. Vielen Dank!",
     "error": "❌ Etwas ist schiefgelaufen. Bitte versuche es erneut.",
     "note": "* Pflichtfelder"
+    },
+    "experience": {
+  "title": "Erfahrung",
+  "linkText": "Projekt ansehen →",
+  "items": [
+    {
+      "icon": "globe",
+      "title": "Web-Portfolio",
+      "org": "Eigenes Projekt",
+      "location": "Remote · 2025",
+      "description": "Portfolio-Website mit Animationen, Dark Mode und responsivem Layout entworfen und entwickelt.",
+      "tools": "React, Vite, HTML, JavaScript, CSS, Framer Motion, GitHub Pages"
+    },
+    {
+      "icon": "robot",
+      "title": "Bot-Entwicklerin",
+      "org": "Discord Automatisierungsprojekte",
+      "location": "Open Source · seit 2025",
+      "description": "Zwei Discord-Bots (Furify, Pawsistant) mit TypeScript & Python entwickelt.",
+      "tools": "TypeScript, Python, Docker, Raspberry Pi, Discord"
+    },
+    {
+      "icon": "paint",
+      "title": "Kreative Mitgestalterin",
+      "org": "University Esports Berlin",
+      "location": "Berlin · seit 2024",
+      "description": "Designs, Illustrationen und Inhalte für Discord, Events und Social Media. Eigene Emojis, Grafiken und visuelle Markeninhalte.",
+      "tools": "Photoshop, Illustrator, Canva, Clip Studio Paint, ProCreate"
+    },
+    {
+      "icon": "paint",
+      "title": "Pixelkünstlerin & Animatorin",
+      "org": "SCP-1881 (in Entwicklung)",
+      "location": "Remote · seit 2023",
+      "description": "Arcade-inspiriertes Pixelart-Spiel mit SCP-Thema in Entwicklung. Zuständig für Sprites, Animationen und visuellen Stil.",
+      "tools": "Aseprite, ProCreate"
+    },
+    {
+      "icon": "paint",
+      "title": "Game Art & UI Design",
+      "org": "SCP: Observer (Steam)",
+      "location": "Remote · 2022–2023",
+      "description": "Grafiken, UI-Elemente und Texturen für das Indie-Horrorspiel SCP: Observer erstellt. Beteiligung am visuellen Stil und der Benutzeroberfläche.",
+      "tools": "Trello, Clip Studio Paint",
+      "link": "https://store.steampowered.com/app/1738710/SCP_Observer/"
+    },
+    {
+      "icon": "paint",
+      "title": "Social & Visual Designerin",
+      "org": "Berlin-Brandenburg Esports",
+      "location": "Berlin · 2021–2024",
+      "description": "Grafikdesign, Webseiteninhalte und Social-Media-Material für lokale Esports-Organisation. Assets für Streams, Turniere und Community erstellt.",
+      "tools": "Photoshop, Canva, Illustrator, Figma, Discord"
+    },
+    {
+      "icon": "paint",
+      "title": "Stream-Design & Turnierunterstützung",
+      "org": "Twitch-Kollaboration",
+      "location": "Remote · 2021–2022",
+      "description": "Stream-Grafiken wie Emotes, Overlays und Offline-Bildschirme erstellt. Mitorganisation und Co-Moderation von osu!-Turnieren mit Twitch-Streamer.",
+      "tools": "Photoshop, Clip Studio Paint, Discord, OBS Assets"
     }
+  ]
+}
+
 
 }
