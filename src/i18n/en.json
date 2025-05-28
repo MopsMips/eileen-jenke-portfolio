@@ -78,6 +78,11 @@
       "tools": "Photoshop, Clip Studio Paint, Discord, OBS Assets"
     }
   ]
-}
+ },
+ "footer": {
+   "text": "Made with ❤️ by myself",
+   "imprint": "Imprint",
+   "privacy": "Privacy Policy"
+ }
 
 }

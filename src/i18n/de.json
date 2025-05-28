@@ -77,7 +77,13 @@
       "tools": "Photoshop, Clip Studio Paint, Discord, OBS Assets"
     }
   ]
-}
+ },
+ "footer": {
+   "text": "Mit ❤️ von mir gemacht",
+   "imprint": "Impressum",
+   "privacy": "Datenschutz"
+ }
+
 
 
 }
