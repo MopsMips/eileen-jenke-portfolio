@@ -4,5 +4,16 @@
     "subtitle": "Kreative Entwicklerin, die Code, Design & Community pixelgenau verbindet. ✨",
     "contact": "Kontaktiere mich",
     "discord": "Tritt meinem Discord bei"
-  }
+    },
+  "contact": {
+    "description": "Lass uns über Design, Code oder etwas ganz anderes sprechen. Ich freue mich auf deine Nachricht!",
+    "name": "Dein Name",
+    "email": "Deine E-Mail",
+    "message": "Deine Nachricht",
+    "submit": "Nachricht senden",
+    "success": "✅ Deine Nachricht wurde gesendet. Vielen Dank!",
+    "error": "❌ Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "note": "* Pflichtfelder"
+    }
+
 }

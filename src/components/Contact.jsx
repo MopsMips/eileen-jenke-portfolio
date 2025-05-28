@@ -1,8 +1,10 @@
 import "./Contact.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+    const { t } = useTranslation();
     const [status, setStatus] = useState("");
 
     const handleSubmit = async (e) => {
@@ -35,7 +37,7 @@ function Contact() {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
             >
-                Say hi 👋
+                {t("contact.title")}
             </motion.h2>
 
             <motion.p
@@ -44,7 +46,7 @@ function Contact() {
                 transition={{ delay: 0.1, duration: 0.5 }}
                 viewport={{ once: true }}
             >
-                Let’s talk design, code, or anything in between. I’d love to hear from you!
+                {t("contact.description")}
             </motion.p>
 
             <motion.form
@@ -56,29 +58,29 @@ function Contact() {
                 viewport={{ once: true }}
             >
                 <label>
-                    Your Name <span className="required">*</span>
+                    {t("contact.name")} <span className="required">*</span>
                 </label>
-                <input type="text" name="name" required placeholder="" />
+                <input type="text" name="name" required />
 
                 <label>
-                    Your Email <span className="required">*</span>
+                    {t("contact.email")} <span className="required">*</span>
                 </label>
-                <input type="email" name="email" required placeholder="" />
+                <input type="email" name="email" required />
 
                 <label>
-                    Your Message <span className="required">*</span>
+                    {t("contact.message")} <span className="required">*</span>
                 </label>
-                <textarea name="message" required placeholder="" />
+                <textarea name="message" required />
 
-                <button type="submit">Send Message</button>
+                <button type="submit">{t("contact.submit")}</button>
 
-                <p className="note">* Required fields</p>
+                <p className="note">{t("contact.note")}</p>
 
                 {status === "success" && (
-                    <p className="form-feedback success">✅ Your message has been sent. Thank you!</p>
+                    <p className="form-feedback success">{t("contact.success")}</p>
                 )}
                 {status === "error" && (
-                    <p className="form-feedback error">❌ Something went wrong. Please try again.</p>
+                    <p className="form-feedback error">{t("contact.error")}</p>
                 )}
             </motion.form>
         </section>
