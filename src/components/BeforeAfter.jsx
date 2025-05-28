@@ -1,8 +1,8 @@
 import "./BeforeAfter.css";
 import ReactCompareImage from "react-compare-image";
 
-import beforeImage from "../assets/before.jpg";
-import afterImage from "../assets/after.jpg";
+import beforeImage from "../assets/Before.png";
+import afterImage from "../assets/After.png";
 
 function BeforeAfter() {
     return (
