@@ -2,7 +2,7 @@ import "./Navbar.css";
 import { useTranslation } from "react-i18next";
 
 function Navbar({ darkMode, toggleDarkMode }) {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <nav className="navbar">
@@ -11,11 +11,11 @@ function Navbar({ darkMode, toggleDarkMode }) {
             </div>
 
             <ul className="nav-links">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#showcase">Showcase</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">{t("nav.skills")}</a></li>
+                <li><a href="#projects">{t("nav.projects")}</a></li>
+                <li><a href="#showcase">{t("nav.showcase")}</a></li>
+                <li><a href="#experience">{t("nav.experience")}</a></li>
+                <li><a href="#contact">{t("nav.contact")}</a></li>
             </ul>
 
             <div className="navbar-controls">

@@ -5,7 +5,9 @@
     "contact": "Kontaktiere mich",
     "discord": "Tritt meinem Discord bei"
     },
+
   "contact": {
+    "title": "Sag Hallo 👋",
     "description": "Lass uns über Design, Code oder etwas ganz anderes sprechen. Ich freue mich auf deine Nachricht!",
     "name": "Dein Name",
     "email": "Deine E-Mail",
@@ -15,6 +17,7 @@
     "error": "❌ Etwas ist schiefgelaufen. Bitte versuche es erneut.",
     "note": "* Pflichtfelder"
     },
+
     "experience": {
   "title": "Erfahrung",
   "linkText": "Projekt ansehen →",
@@ -78,11 +81,21 @@
     }
   ]
  },
+
  "footer": {
    "text": "Mit ❤️ von mir gemacht",
    "imprint": "Impressum",
    "privacy": "Datenschutz"
- }
+ },
+
+ "nav": {
+   "skills": "Fähigkeiten",
+   "projects": "Projekte",
+   "showcase": "Showcase",
+   "experience": "Erfahrung",
+   "contact": "Kontakt"
+}
+
 
 
 

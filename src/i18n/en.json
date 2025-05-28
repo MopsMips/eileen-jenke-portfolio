@@ -83,6 +83,15 @@
    "text": "Made with ❤️ by myself",
    "imprint": "Imprint",
    "privacy": "Privacy Policy"
+ },
+ "nav": {
+   "skills": "Skills",
+   "projects": "Projects",
+   "showcase": "Showcase",
+   "experience": "Experience",
+   "contact": "Contact"
  }
+
+
 
 }
