@@ -17,9 +17,9 @@
     "note": "* Required fields"
   },
   "experience": {
-  "title": "Experience",
-  "linkText": "View Project →",
-  "items": [
+    "title": "Experience",
+    "linkText": "View Project →",
+    "items": [
     {
       "icon": "globe",
       "title": "Web Portfolio",
@@ -78,19 +78,26 @@
       "tools": "Photoshop, Clip Studio Paint, Discord, OBS Assets"
     }
   ]
- },
- "footer": {
-   "text": "Made with ❤️ by myself",
-   "imprint": "Imprint",
-   "privacy": "Privacy Policy"
- },
- "nav": {
-   "skills": "Skills",
-   "projects": "Projects",
-   "showcase": "Showcase",
-   "experience": "Experience",
-   "contact": "Contact"
- }
+  },
+  "footer": {
+    "text": "Made with ❤️ by myself",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy"
+  },
+  "nav": {
+    "skills": "Skills",
+    "projects": "Projects",
+    "showcase": "Showcase",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "proficiency": {
+    "title": "Tech + Creativity",
+    "creative": "Creative & Community Work",
+    "frontend": "Frontend & UI Development",
+    "automation": "Bot Development & Automation"
+  }
+
 
 
 

@@ -1,8 +1,11 @@
 import "./Proficiency.css";
 import { motion } from "framer-motion";
 import ratGif from "../assets/Rat.gif";
+import { useTranslation } from "react-i18next";
 
 function Proficiency() {
+    const { t } = useTranslation();
+
     return (
         <section className="proficiency-section" id="proficiency">
             <div className="proficiency-layout">
@@ -13,7 +16,7 @@ function Proficiency() {
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
                     >
-                        Tech + Creativity
+                        {t("proficiency.title")}
                     </motion.h2>
 
                     <motion.div
@@ -23,7 +26,7 @@ function Proficiency() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         viewport={{ once: true }}
                     >
-                        <p>Creative & Community Work</p>
+                        <p>{t("proficiency.creative")}</p>
                         <div className="progress">
                             <div className="bar" style={{ width: "95%" }}></div>
                         </div>
@@ -36,7 +39,7 @@ function Proficiency() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         viewport={{ once: true }}
                     >
-                        <p>Frontend & UI Development</p>
+                        <p>{t("proficiency.frontend")}</p>
                         <div className="progress">
                             <div className="bar" style={{ width: "80%" }}></div>
                         </div>
@@ -49,7 +52,7 @@ function Proficiency() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         viewport={{ once: true }}
                     >
-                        <p>Bot Development & Automation</p>
+                        <p>{t("proficiency.automation")}</p>
                         <div className="progress">
                             <div className="bar" style={{ width: "75%" }}></div>
                         </div>
@@ -63,7 +66,11 @@ function Proficiency() {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    <img src={ratGif} alt="Pixelratte mit Herz" className="proficiency-gif" />
+                    <img
+                        src={ratGif}
+                        alt="Pixelratte mit Herz"
+                        className="proficiency-gif"
+                    />
                 </motion.div>
             </div>
         </section>

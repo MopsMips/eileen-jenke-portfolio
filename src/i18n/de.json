@@ -94,7 +94,14 @@
    "showcase": "Showcase",
    "experience": "Erfahrung",
    "contact": "Kontakt"
+},
+ "proficiency": {
+   "title": "Technik + Kreativität",
+   "creative": "Kreative Arbeit & Community",
+   "frontend": "Frontend- & UI-Entwicklung",
+   "automation": "Bot-Entwicklung & Automatisierung"
 }
+
 
 
 
