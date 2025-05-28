@@ -1,0 +1,40 @@
+.before-after-section {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.before-after-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.before-after-section p {
+    font-size: 1.1rem;
+    color: var(--subtle-text);
+    margin-bottom: 2.5rem;
+}
+
+.slider-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .before-after-section h2 {
+        font-size: 2rem;
+    }
+
+    .before-after-section p {
+        font-size: 1rem;
+    }
+
+    .slider-container {
+        padding: 0 1rem;
+    }
+}

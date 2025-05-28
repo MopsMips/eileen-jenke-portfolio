@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Proficiency from "./components/Proficiency";
 import Projects from "./components/Projects";
+import BeforeAfter from "./components/BeforeAfter";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
@@ -30,6 +31,7 @@ function App() {
       <Skills />
       <Proficiency />
       <Projects />
+      <BeforeAfter />
       <ScrollToTop />
       <Experience />
       <Contact />
