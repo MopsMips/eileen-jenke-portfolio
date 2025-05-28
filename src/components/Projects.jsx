@@ -1,38 +1,12 @@
 import "./Projects.css";
 import { FaStar, FaCodeBranch, FaBook } from "react-icons/fa";
 import { motion } from "framer-motion";
-
-const projectData = [
-    {
-        name: "My Portfolio",
-        description: "🌐 My personal portfolio built with React, Vite, Framer Motion & GitHub Pages.",
-        tech: "JavaScript, HTML, CSS",
-        size: "3.5 MB",
-        stars: 1,
-        forks: 0,
-        link: "https://github.com/MopsMips/eileen-jenke-portfolio",
-    },
-    {
-        name: "Furify",
-        description: "🎵 A Discord bot that adds furry-themed sound effects and moderation tools.",
-        tech: "TypeScript, Discord.js",
-        size: "8.7 MB",
-        stars: 2,
-        forks: 0,
-        link: "https://github.com/MopsMips/Furify",
-    },
-    {
-        name: "Pawsistant",
-        description: "🤖 An assistant Discord bot for scheduling, commands and utility tools.",
-        tech: "Python, Docker",
-        size: "10.2 MB",
-        stars: 2,
-        forks: 0,
-        link: "https://github.com/MopsMips/Pawsistant",
-    },
-];
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+    const { t } = useTranslation();
+    const projectData = t("projects.items", { returnObjects: true });
+
     return (
         <section className="projects-section" id="projects">
             <motion.h2
@@ -41,7 +15,7 @@ function Projects() {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
             >
-                🚀 My Projects
+                🚀 {t("projects.title")}
             </motion.h2>
 
             <div className="projects-grid">
@@ -69,7 +43,7 @@ function Projects() {
 
                         <div className="project-link">
                             <a href={proj.link} target="_blank" rel="noreferrer">
-                                View on GitHub →
+                                {t("projects.view")}
                             </a>
                         </div>
                     </motion.div>
@@ -84,7 +58,7 @@ function Projects() {
                 viewport={{ once: true, amount: 0.3 }}
             >
                 <a href="https://github.com/MopsMips" target="_blank" rel="noreferrer">
-                    MORE PROJECTS
+                    {t("projects.more")}
                 </a>
             </motion.div>
         </section>

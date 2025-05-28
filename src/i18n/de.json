@@ -82,28 +82,59 @@
   ]
  },
 
- "footer": {
+  "footer": {
    "text": "Mit ❤️ von mir gemacht",
    "imprint": "Impressum",
    "privacy": "Datenschutz"
  },
 
- "nav": {
+  "nav": {
    "skills": "Fähigkeiten",
    "projects": "Projekte",
    "showcase": "Showcase",
    "experience": "Erfahrung",
    "contact": "Kontakt"
 },
- "proficiency": {
+  "proficiency": {
    "title": "Technik + Kreativität",
    "creative": "Kreative Arbeit & Community",
    "frontend": "Frontend- & UI-Entwicklung",
    "automation": "Bot-Entwicklung & Automatisierung"
+},
+ "projects": {
+  "title": "Meine Projekte",
+  "view": "Auf GitHub ansehen →",
+  "more": "Weitere Projekte",
+  "items": [
+    {
+      "name": "Mein Portfolio",
+      "description": "🌐 Mein persönliches Portfolio mit React, Vite, Framer Motion & GitHub Pages erstellt.",
+      "tech": "JavaScript, HTML, CSS",
+      "size": "3,5 MB",
+      "stars": 1,
+      "forks": 0,
+      "link": "https://github.com/MopsMips/eileen-jenke-portfolio"
+    },
+    {
+      "name": "Furify",
+      "description": "🎵 Ein Discord-Bot mit furry Sounds und Moderationstools.",
+      "tech": "TypeScript, Discord.js",
+      "size": "8,7 MB",
+      "stars": 2,
+      "forks": 0,
+      "link": "https://github.com/MopsMips/Furify"
+    },
+    {
+      "name": "Pawsistant",
+      "description": "🤖 Ein Discord-Bot für Planung, Kommandos und nützliche Tools.",
+      "tech": "Python, Docker",
+      "size": "10,2 MB",
+      "stars": 2,
+      "forks": 0,
+      "link": "https://github.com/MopsMips/Pawsistant"
+    }
+  ]
 }
-
-
-
 
 
 }

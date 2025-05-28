@@ -96,9 +96,41 @@
     "creative": "Creative & Community Work",
     "frontend": "Frontend & UI Development",
     "automation": "Bot Development & Automation"
-  }
-
-
+  },
+"projects": {
+  "title": "My Projects",
+  "view": "View on GitHub →",
+  "more": "More Projects",
+  "items": [
+    {
+      "name": "My Portfolio",
+      "description": "🌐 My personal portfolio built with React, Vite, Framer Motion & GitHub Pages.",
+      "tech": "JavaScript, HTML, CSS",
+      "size": "3.5 MB",
+      "stars": 1,
+      "forks": 0,
+      "link": "https://github.com/MopsMips/eileen-jenke-portfolio"
+    },
+    {
+      "name": "Furify",
+      "description": "🎵 A Discord bot that adds furry-themed sound effects and moderation tools.",
+      "tech": "TypeScript, Discord.js",
+      "size": "8.7 MB",
+      "stars": 2,
+      "forks": 0,
+      "link": "https://github.com/MopsMips/Furify"
+    },
+    {
+      "name": "Pawsistant",
+      "description": "🤖 An assistant Discord bot for scheduling, commands and utility tools.",
+      "tech": "Python, Docker",
+      "size": "10.2 MB",
+      "stars": 2,
+      "forks": 0,
+      "link": "https://github.com/MopsMips/Pawsistant"
+    }
+  ]
+}
 
 
 }
