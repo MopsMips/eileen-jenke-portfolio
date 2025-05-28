@@ -1,0 +1,8 @@
+{
+  "hero": {
+    "greeting": "Hallo, ich bin {{name}}",
+    "subtitle": "Kreative Entwicklerin, die Code, Design & Community pixelgenau verbindet. ✨",
+    "contact": "Kontaktiere mich",
+    "discord": "Tritt meinem Discord bei"
+  }
+}

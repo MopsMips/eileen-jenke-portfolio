@@ -3,8 +3,11 @@ import { FaGithub, FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import profilbild from "../assets/Eileen.JPEG";
 import { FaDiscord } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+    const { t } = useTranslation();
+
     return (
         <section className="hero">
             <div className="hero-content">
@@ -16,11 +19,11 @@ function Hero() {
                     viewport={{ once: true }}
                 >
                     <h1>
-                        Hi all, I'm <span className="name">Eileen</span>
+                        {t("hero.greeting", { name: "Eileen" })}
                         <span className="wave">👋</span>
                     </h1>
                     <p className="subtitle">
-                        Creative developer blending code, design & community — one pixel at a time. ✨
+                        {t("hero.subtitle")}
                     </p>
                     <div className="social-links">
                         <a href="https://github.com/MopsMips"><FaGithub /></a>
@@ -29,15 +32,14 @@ function Hero() {
                         <a href="https://x.com/Miss_Mops"><FaXTwitter /></a>
                     </div>
                     <div className="hero-buttons">
-                        <a href="#contact" className="btn">Contact Me</a>
+                        <a href="#contact" className="btn">{t("hero.contact")}</a>
                         <a
                             href="https://discord.gg/6dzteBrQyg"
                             className="btn secondary btn-discord"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Join My Discord
-                            <FaDiscord className="icon-right" />
+                            {t("hero.discord")} <FaDiscord className="icon-right" />
                         </a>
                     </div>
                 </motion.div>
@@ -50,8 +52,8 @@ function Hero() {
                 >
                     <img src={profilbild} alt="Eileen" />
                 </motion.div>
-            </div >
-        </section >
+            </div>
+        </section>
     );
 }
 

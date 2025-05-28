@@ -22,8 +22,6 @@ function App() {
     return stored === null ? true : stored === "true";
   });
 
-  const [language, setLanguage] = useState("en");
-
   useEffect(() => {
     document.body.className = darkMode ? "dark" : "light";
     localStorage.setItem("darkMode", darkMode);
@@ -34,27 +32,25 @@ function App() {
       <Navbar
         darkMode={darkMode}
         toggleDarkMode={() => setDarkMode(prev => !prev)}
-        language={language}
-        setLanguage={setLanguage}
       />
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Hero language={language} />
-              <Skills language={language} />
-              <Proficiency language={language} />
-              <Projects language={language} />
-              <Showcase language={language} />
+              <Hero />
+              <Skills />
+              <Proficiency />
+              <Projects />
+              <Showcase />
               <ScrollToTop />
-              <Experience language={language} />
-              <Contact language={language} />
-              <Footer language={language} />
+              <Experience />
+              <Contact />
+              <Footer />
             </>
           }
         />
-        <Route path="/showcase" element={<ShowcasePage language={language} />} />
+        <Route path="/showcase" element={<ShowcasePage />} />
       </Routes>
     </Router>
   );

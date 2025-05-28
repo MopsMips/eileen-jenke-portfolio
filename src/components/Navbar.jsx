@@ -1,6 +1,9 @@
 import "./Navbar.css";
+import { useTranslation } from "react-i18next";
 
-function Navbar({ darkMode, toggleDarkMode, language, setLanguage }) {
+function Navbar({ darkMode, toggleDarkMode }) {
+    const { i18n } = useTranslation();
+
     return (
         <nav className="navbar">
             <div className="logo">
@@ -18,22 +21,21 @@ function Navbar({ darkMode, toggleDarkMode, language, setLanguage }) {
             <div className="navbar-controls">
                 <div className="language-switch">
                     <button
-                        onClick={() => setLanguage("de")}
-                        className={language === "de" ? "active" : ""}
+                        onClick={() => i18n.changeLanguage("de")}
+                        className={i18n.language === "de" ? "active" : ""}
                         aria-label="Deutsch"
                     >
-                        <img src="/flags/de.svg" alt="DE" />
+                        <img src="/flags/de.svg" alt="Deutsch" />
                     </button>
                     <span className="language-separator">|</span>
                     <button
-                        onClick={() => setLanguage("en")}
-                        className={language === "en" ? "active" : ""}
+                        onClick={() => i18n.changeLanguage("en")}
+                        className={i18n.language === "en" ? "active" : ""}
                         aria-label="English"
                     >
-                        <img src="/flags/gb.svg" alt="EN" />
+                        <img src="/flags/gb.svg" alt="English" />
                     </button>
                 </div>
-
 
                 <div className="theme-switch">
                     <label className="switch">

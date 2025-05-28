@@ -1,0 +1,8 @@
+{
+  "hero": {
+    "greeting": "Hi, I'm {{name}}",
+    "subtitle": "Creative developer blending code, design & community — one pixel at a time. ✨",
+    "contact": "Contact Me",
+    "discord": "Join My Discord"
+  }
+}
