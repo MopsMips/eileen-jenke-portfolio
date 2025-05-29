@@ -29,8 +29,7 @@ function LayoutWrapper({ children, darkMode, toggleDarkMode }) {
   const location = useLocation();
   const { t } = useTranslation();
 
-  const isLegalPage =
-    location.pathname === "/impressum" || location.pathname === "/datenschutz";
+  const isLegalPage = ["/impressum", "/datenschutz", "/showcase"].includes(location.pathname);
 
   return (
     <>
@@ -92,7 +91,6 @@ function App() {
             element={
               <>
                 <ShowcasePage />
-                <Contact />
                 <Footer />
               </>
             }

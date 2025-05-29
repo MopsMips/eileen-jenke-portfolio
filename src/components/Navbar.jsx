@@ -1,13 +1,8 @@
 import "./Navbar.css";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
 
-function Navbar({ darkMode, toggleDarkMode }) {
+function Navbar({ darkMode, toggleDarkMode, isLegalPage }) {
     const { t, i18n } = useTranslation();
-    const location = useLocation();
-
-    const isLegalPage =
-        location.pathname === "/impressum" || location.pathname === "/datenschutz";
 
     return (
         <nav className="navbar">
