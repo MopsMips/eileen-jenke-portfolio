@@ -163,8 +163,9 @@
   "rightsText": "You have the right at any time to receive information free of charge about the origin, recipient, and purpose of your stored personal data. You also have the right to request correction, blocking, or deletion of this data.",
   "contactTitle": "Responsible Party",
   "contactText": "If you have any questions about data protection, please contact:"
+},
+"back": {
+  "home": "Back to homepage"
 }
-
-
 
 }

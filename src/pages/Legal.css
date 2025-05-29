@@ -12,3 +12,32 @@
     margin-bottom: 1rem;
     color: var(--accent-color);
 }
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.back-link-wrapper {
+    text-align: left;
+    margin: 2rem 2rem 0;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    text-decoration: none;
+    border: 2px solid var(--accent-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.back-home:hover {
+    background-color: var(--accent-color);
+    color: var(--button-text);
+}

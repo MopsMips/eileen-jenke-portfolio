@@ -1,8 +1,13 @@
 import "./Navbar.css";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 
 function Navbar({ darkMode, toggleDarkMode }) {
     const { t, i18n } = useTranslation();
+    const location = useLocation();
+
+    const isLegalPage =
+        location.pathname === "/impressum" || location.pathname === "/datenschutz";
 
     return (
         <nav className="navbar">
@@ -10,13 +15,15 @@ function Navbar({ darkMode, toggleDarkMode }) {
                 &lt; <span className="logo-name">Eileen Jenke</span> /&gt;
             </div>
 
-            <ul className="nav-links">
-                <li><a href="#skills">{t("nav.skills")}</a></li>
-                <li><a href="#projects">{t("nav.projects")}</a></li>
-                <li><a href="#showcase">{t("nav.showcase")}</a></li>
-                <li><a href="#experience">{t("nav.experience")}</a></li>
-                <li><a href="#contact">{t("nav.contact")}</a></li>
-            </ul>
+            {!isLegalPage && (
+                <ul className="nav-links">
+                    <li><a href="#skills">{t("nav.skills")}</a></li>
+                    <li><a href="#projects">{t("nav.projects")}</a></li>
+                    <li><a href="#showcase">{t("nav.showcase")}</a></li>
+                    <li><a href="#experience">{t("nav.experience")}</a></li>
+                    <li><a href="#contact">{t("nav.contact")}</a></li>
+                </ul>
+            )}
 
             <div className="navbar-controls">
                 <div className="language-switch">

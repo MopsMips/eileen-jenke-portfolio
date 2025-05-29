@@ -167,8 +167,9 @@
   "rightsText": "Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.",
   "contactTitle": "Verantwortliche Stelle",
   "contactText": "Bei Fragen zum Datenschutz wenden Sie sich bitte an:"
+},
+"back": {
+  "home": "Zurück zur Startseite"
 }
-
-
 
 }
