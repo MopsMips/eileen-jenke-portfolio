@@ -148,6 +148,27 @@
     "⚡ Dieses Portfolio mit React, Vite, CSS, Framer Motion entwickelt und über GitHub Pages veröffentlicht.",
     "⚡ Illustrationen, UI-Elemente und Visuals mit Procreate, Photoshop, Aseprite & Co. erstellt."
   ]
+},
+"legal": {
+  "impressumTitle": "Impressum",
+  "provider": "Angaben gemäß § 5 TMG",
+  "contact": "Kontakt",
+  "responsibility": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+  "disclaimer": "Haftungsausschluss",
+  "disclaimerText": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+},
+"privacy": {
+  "title": "Datenschutzerklärung",
+  "generalTitle": "Allgemeine Hinweise",
+  "generalText": "Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften.",
+  "dataCollectionTitle": "Datenerfassung auf dieser Website",
+  "dataCollectionText": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst (z. B. Browser, Uhrzeit).",
+  "rightsTitle": "Ihre Rechte",
+  "rightsText": "Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.",
+  "contactTitle": "Verantwortliche Stelle",
+  "contactText": "Bei Fragen zum Datenschutz wenden Sie sich bitte an:"
 }
+
+
 
 }

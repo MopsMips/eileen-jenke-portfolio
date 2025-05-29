@@ -12,6 +12,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
+import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
 import ShowcasePage from "./pages/ShowcasePage";
 
 import "./App.css";
@@ -33,6 +35,7 @@ function App() {
         darkMode={darkMode}
         toggleDarkMode={() => setDarkMode(prev => !prev)}
       />
+
       <Routes>
         <Route
           path="/"
@@ -50,7 +53,33 @@ function App() {
             </>
           }
         />
-        <Route path="/showcase" element={<ShowcasePage />} />
+        <Route
+          path="/showcase"
+          element={
+            <>
+              <ShowcasePage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/impressum"
+          element={
+            <>
+              <Impressum />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/datenschutz"
+          element={
+            <>
+              <Datenschutz />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
