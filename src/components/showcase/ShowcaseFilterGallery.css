@@ -1,0 +1,80 @@
+/* ShowcaseFilterGallery.css */
+
+.filter-gallery {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+    padding: 0.6rem 1.2rem;
+    background-color: var(--button-primary);
+    color: var(--button-text);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+    background-color: var(--button-primary-hover);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: left;
+}
+
+.gallery-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.1rem;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
