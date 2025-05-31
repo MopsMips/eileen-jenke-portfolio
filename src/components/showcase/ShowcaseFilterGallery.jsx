@@ -31,12 +31,24 @@ const categories = ["All", ...new Set(showcaseItems.map((item) => item.category)
 
 function ShowcaseFilterGallery() {
     const [activeCategory, setActiveCategory] = useState("All");
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedIndex, setSelectedIndex] = useState(null);
 
     const filteredItems =
         activeCategory === "All"
             ? showcaseItems
             : showcaseItems.filter((item) => item.category === activeCategory);
+
+    const handlePrev = () => {
+        if (selectedIndex > 0) setSelectedIndex(selectedIndex - 1);
+    };
+
+    const handleNext = () => {
+        if (selectedIndex < filteredItems.length - 1) setSelectedIndex(selectedIndex + 1);
+    };
+
+    const handleClose = () => {
+        setSelectedIndex(null);
+    };
 
     return (
         <section className="filter-gallery">
@@ -57,7 +69,7 @@ function ShowcaseFilterGallery() {
                     <div
                         className="gallery-card"
                         key={index}
-                        onClick={() => setSelectedImage({ src: item.src, alt: item.title })}
+                        onClick={() => setSelectedIndex(index)}
                     >
                         <img src={item.src} alt={item.title} />
                         <div className="overlay">
@@ -68,7 +80,13 @@ function ShowcaseFilterGallery() {
                 ))}
             </div>
 
-            <ImageLightbox image={selectedImage} onClose={() => setSelectedImage(null)} />
+            <ImageLightbox
+                images={filteredItems.map((item) => ({ src: item.src, alt: item.title }))}
+                currentIndex={selectedIndex}
+                onClose={handleClose}
+                onPrev={handlePrev}
+                onNext={handleNext}
+            />
         </section>
     );
 }

@@ -55,3 +55,39 @@
     color: var(--accent-color, #ff5a5f);
     -webkit-text-stroke: 1px black;
 }
+
+.lightbox-nav {
+    all: unset;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    cursor: pointer;
+    z-index: 9999;
+    padding: 0 1rem;
+    user-select: none;
+}
+
+.lightbox-nav.left {
+    left: 0.5rem;
+}
+
+.lightbox-nav.right {
+    right: 0.5rem;
+}
+
+.lightbox-nav:hover {
+    color: var(--accent-color, #ff5a5f);
+    transform: translateY(-50%) scale(1.2);
+    -webkit-text-stroke: 1px black;
+}
+
+.lightbox-nav:focus,
+.lightbox-nav:focus-visible,
+.lightbox-nav:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
