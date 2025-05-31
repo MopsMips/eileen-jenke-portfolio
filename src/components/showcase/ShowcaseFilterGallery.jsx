@@ -2,12 +2,10 @@ import { useState } from "react";
 import "./ShowcaseFilterGallery.css";
 import ImageLightbox from "./ImageLightbox";
 
-// Bild-Importe
 import FurifyIcon from "../../assets/showcase/logos/Furify_Icon.png";
 import PawsistantIcon from "../../assets/showcase/logos/Pawsistant_Icon.png";
 import TempTempIcon from "../../assets/showcase/logos/TempTemp_Icon.png";
 
-// Galerie-Inhalte
 const showcaseItems = [
     {
         category: "Logos",
@@ -29,28 +27,16 @@ const showcaseItems = [
     },
 ];
 
-// Kategorien dynamisch generieren
 const categories = ["All", ...new Set(showcaseItems.map((item) => item.category))];
 
 function ShowcaseFilterGallery() {
     const [activeCategory, setActiveCategory] = useState("All");
-    const [lightboxImage, setLightboxImage] = useState(null);
-    const [lightboxAlt, setLightboxAlt] = useState("");
+    const [selectedImage, setSelectedImage] = useState(null);
 
     const filteredItems =
         activeCategory === "All"
             ? showcaseItems
             : showcaseItems.filter((item) => item.category === activeCategory);
-
-    const openLightbox = (src, alt) => {
-        setLightboxImage(src);
-        setLightboxAlt(alt);
-    };
-
-    const closeLightbox = () => {
-        setLightboxImage(null);
-        setLightboxAlt("");
-    };
 
     return (
         <section className="filter-gallery">
@@ -71,7 +57,7 @@ function ShowcaseFilterGallery() {
                     <div
                         className="gallery-card"
                         key={index}
-                        onClick={() => openLightbox(item.src, item.title)}
+                        onClick={() => setSelectedImage({ src: item.src, alt: item.title })}
                     >
                         <img src={item.src} alt={item.title} />
                         <div className="overlay">
@@ -82,9 +68,7 @@ function ShowcaseFilterGallery() {
                 ))}
             </div>
 
-            {lightboxImage && (
-                <ImageLightbox image={lightboxImage} alt={lightboxAlt} onClose={closeLightbox} />
-            )}
+            <ImageLightbox image={selectedImage} onClose={() => setSelectedImage(null)} />
         </section>
     );
 }
