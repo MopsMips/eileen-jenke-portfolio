@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 function Navbar({ darkMode, toggleDarkMode, isLegalPage }) {
     const { t, i18n } = useTranslation();
@@ -12,11 +13,31 @@ function Navbar({ darkMode, toggleDarkMode, isLegalPage }) {
 
             {!isLegalPage && (
                 <ul className="nav-links">
-                    <li><a href="#skills">{t("nav.skills")}</a></li>
-                    <li><a href="#projects">{t("nav.projects")}</a></li>
-                    <li><a href="#showcase">{t("nav.showcase")}</a></li>
-                    <li><a href="#experience">{t("nav.experience")}</a></li>
-                    <li><a href="#contact">{t("nav.contact")}</a></li>
+                    <li>
+                        <Link to="skills" smooth={true} duration={500} offset={-70}>
+                            {t("nav.skills")}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="projects" smooth={true} duration={500} offset={-70}>
+                            {t("nav.projects")}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="showcase" smooth={true} duration={500} offset={-70}>
+                            {t("nav.showcase")}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="experience" smooth={true} duration={500} offset={-70}>
+                            {t("nav.experience")}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="contact" smooth={true} duration={500} offset={-70}>
+                            {t("nav.contact")}
+                        </Link>
+                    </li>
                 </ul>
             )}
 
