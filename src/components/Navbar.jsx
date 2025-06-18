@@ -27,7 +27,7 @@ function Navbar({ darkMode, toggleDarkMode, isLegalPage }) {
                         className={i18n.language === "de" ? "active" : ""}
                         aria-label="Deutsch"
                     >
-                        <img src="/flags/de.svg" alt="Deutsch" />
+                        <img src={`${import.meta.env.BASE_URL}flags/de.svg`} alt="Deutsch" />
                     </button>
                     <span className="language-separator">|</span>
                     <button
@@ -35,7 +35,7 @@ function Navbar({ darkMode, toggleDarkMode, isLegalPage }) {
                         className={i18n.language === "en" ? "active" : ""}
                         aria-label="English"
                     >
-                        <img src="/flags/gb.svg" alt="English" />
+                        <img src={`${import.meta.env.BASE_URL}flags/gb.svg`} alt="English" />
                     </button>
                 </div>
 
