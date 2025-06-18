@@ -13,18 +13,32 @@ function ImageLightbox({ images, currentIndex, onClose, onPrev, onNext }) {
                 <button className="lightbox-close" onClick={onClose} aria-label="Close">
                     ×
                 </button>
-                {hasPrev && (
-                    <button className="lightbox-nav left" onClick={onPrev} aria-label="Previous">
-                        ‹
-                    </button>
-                )}
-                <img src={image.src} alt={image.alt} />
-                {hasNext && (
-                    <button className="lightbox-nav right" onClick={onNext} aria-label="Next">
-                        ›
-                    </button>
-                )}
-                <p>{image.alt}</p>
+
+                <div className="lightbox-media-wrapper">
+                    <div className="lightbox-image-wrapper">
+                        <button
+                            className={`lightbox-nav left ${!hasPrev ? "invisible" : ""}`}
+                            onClick={hasPrev ? onPrev : undefined}
+                            aria-label="Previous"
+                            disabled={!hasPrev}
+                        >
+                            ‹
+                        </button>
+
+                        <img src={image.src} alt={image.alt} />
+
+                        <button
+                            className={`lightbox-nav right ${!hasNext ? "invisible" : ""}`}
+                            onClick={hasNext ? onNext : undefined}
+                            aria-label="Next"
+                            disabled={!hasNext}
+                        >
+                            ›
+                        </button>
+
+                        <p className="lightbox-caption">{image.alt}</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
